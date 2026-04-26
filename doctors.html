@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="styles.css" />
+  </head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-header-red border-b border-white/10 shadow-lg">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 h-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white" data-icon="medical_services">medical_services</span>
+<span class="text-2xl font-bold text-white font-headline-md">Shanlink Medical</span>
+</div>
+<nav class="hidden md:flex items-center gap-6 font-manrope text-sm font-medium">
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="index.html">Home</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="about.html">About</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="services.html">Services</a>
+<a class="font-manrope text-base font-medium text-white border-b-2 border-teal-400 pb-1" href="doctors.html">Doctors</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="appointments.html">Appointments</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="pharmacy.html">Pharmacy</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-white/10 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-white/80" data-icon="dark_mode">dark_mode</span>
+</button>
+<button class="md:hidden p-2 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-white" data-icon="menu">menu</span>
+</button>
+<button class="bg-[#facc15] text-black px-5 py-2 rounded-lg font-label-sm hover:bg-[#990000] hover:text-white transition-all">
+                Book Appointment
+            </button>
+</div>
+    </div>
+</header>
+<main class="pt-24 pb-xl px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-lg">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 border-b border-outline-variant pb-md">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-on-background mb-4">Our Medical Team</h1>
+<p class="font-body-lg text-on-surface-variant">Exceptional care delivered by world-class specialists. We combine clinical excellence with professional empathy to ensure your well-being.</p>
+</div>
+<div class="flex flex-wrap gap-2 pb-2">
+<span class="px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm">All Specialists</span>
+
+</div>
+</div>
+</section>
+<!-- Doctors Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Lead Doctor Card (Asymmetric Layout) -->
+<div class="md:col-span-8 bg-surface-container-lowest dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 h-80 md:h-auto flex justify-center items-center p-6 bg-slate-50 dark:bg-slate-800/50">
+<img alt="Chief Medical Officer" class="w-48 h-48 object-cover rounded-full shadow-md" data-alt="Professional female doctor with stethoscope in a clean modern clinic environment, soft morning light, clinical and confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZhevJ6FaOGTT6tMK8dwpCKPthsXIqpRL_WSkxq14nl-x3MMB7s4XTJDSVdLGr5WYHr6UxMbvZahUaoLnFHRLmgRJwmE14vNaNf2SMp3lTkR6oiVzbAiz7i9Aorbcog_g9kwLpo7eBm4bMwh1bPXqAhLoPsCvgaEPf0kldnNdycjSe1vb-BQB0uXbgddIVJXTU7YyLh_AlPJudO511ggFy_bWRncyeXHkuQn_nG1KhS1ZiK3lZkU-RS7pnrymW7lUmI88Pfsb7_s8"/>
+</div>
+<div class="md:w-1/2 p-md flex flex-col justify-center">
+<span class="text-secondary font-label-sm uppercase tracking-wider mb-2">Chief Medical Officer</span>
+<h2 class="font-headline-lg text-on-background mb-4">Dr. Sarah Thompson</h2>
+<p class="font-body-md text-on-surface-variant mb-6">With over 20 years of experience in internal medicine, Dr. Thompson leads our clinical team with a focus on holistic patient care and diagnostic precision.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="school">school</span>
+<span class="font-label-sm">Harvard Medical School</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+<span class="font-label-sm">Board Certified - Internal Medicine</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Specialist Card 4 -->
+<div class="md:col-span-4 bg-surface-container-lowest dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm p-sm">
+<img alt="General Practitioner" class="w-32 h-32 object-cover rounded-full mx-auto mt-4 mb-sm" data-alt="Warm male doctor laughing slightly in a professional setting, blurred bookshelves in the background, warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPIDzplg8y7NbKnviiQk5L2QXlXtPwv6_dJKtlpsDhTfcLb1U4GFkaD6QOU8Ba9PY2afBHJ_6nnmQNe1asip6Y7fe66Na_7DCeWOL1VOplLpxul1u5uf6PuWR4Snjeo1bJ3OAbQ9KqGj9Cho7KWosl76QGstnC-_TcTuXJ_NGqPS485ohBkgfAXwPySAdGoLx2QojPrbCjPVDgHUOsqiidREgct8RvLwTCHw00g36WNfOtWelyTY01xorbiEP3pKg1WjIYKyE9TCA"/>
+<div class="space-y-2">
+<span class="px-3 py-1 rounded bg-surface-variant text-primary text-[12px] font-bold uppercase">Primary Care</span>
+<h3 class="font-headline-md text-on-background">Dr. Robert Hales</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Comprehensive health management for families, focusing on prevention and lifestyle optimization.</p>
+</div>
+<div class="mt-sm pt-sm border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant">10 Years Exp.</span>
+
+</div>
+</div>
+</div>
+</main>
+    <footer class="bg-footer-red py-16 md:py-20 px-6 md:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16 text-center md:text-left">
+                <div class="space-y-6 md:space-y-8">
+                    <h3 class="text-3xl md:text-4xl font-bold font-headline-md">Shanlink Medical</h3>
+                    <p class="text-white/90 text-base md:text-lg leading-relaxed max-w-sm mx-auto md:mx-0">
+                        Professional empathy in every interaction. Providing world-class healthcare since 2009.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Quick Links</h4>
+                    <ul class="space-y-4 md:space-y-5 text-base md:text-lg text-white/80">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="appointments.html" class="hover:text-white transition-colors">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Contact Us</h4>
+                    <p class="text-base md:text-lg text-white/80 mb-6 md:mb-8">Shanlink medical clinic, Nairobi</p>
+                    <a href="https://wa.me/254113535069" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white px-8 md:px-10 py-3 md:py-4 rounded-full text-lg md:text-xl font-bold hover:scale-105 transition-transform shadow-2xl mb-8 inline-block text-center">
+                        WhatsApp Us
+                    </a>
+                    <div class="flex items-center justify-center md:justify-start gap-6">
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="X">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.333.014 7.053.072 2.695.272.272 2.69.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.618 6.77 6.98 6.97 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.351-.2 6.77-2.618 6.97-6.98.058-1.28.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.351-2.618-6.77-6.97-6.97C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 md:pt-10 border-t border-white/20 text-center">
+                <p class="font-manrope text-base md:text-lg font-medium text-white">
+                    © <span class="current-year">2026</span> Shanlink Medical Clinic. Professional Empathy in Care. | Designed by Momanyi
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<!-- Search Overlay -->
+<div id="search-overlay" class="fixed inset-0 bg-header-red/95 z-[60] hidden items-center justify-center p-6 backdrop-blur-md">
+    <button id="close-search" class="absolute top-8 right-8 text-white/70 hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="w-full max-w-3xl text-center">
+        <div class="flex items-center justify-center gap-3 md:gap-4 mb-8 md:mb-10">
+            <span class="material-symbols-outlined text-teal-400 text-5xl md:text-6xl">medical_services</span>
+            <h2 class="text-3xl md:text-5xl font-headline-lg text-white">Shanlink Search</h2>
+        </div>
+        <div class="relative group">
+            <span class="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 material-symbols-outlined text-teal-400 text-3xl md:text-4xl group-focus-within:scale-110 transition-transform">medical_services</span>
+            <input type="text" id="search-input" placeholder="Search for doctors, services..." 
+                class="w-full bg-white/10 border-b-2 border-white/30 text-white text-xl md:text-3xl py-6 md:py-8 pl-16 md:pl-20 pr-12 md:pr-16 focus:outline-none focus:border-teal-400 placeholder:text-white/20 transition-colors">
+            <button class="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-4xl md:text-5xl">search</span>
+            </button>
+        </div>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <span class="text-white/60 text-sm">Popular:</span>
+            <a href="doctors.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Find a Doctor</a>
+            <a href="services.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Emergency Services</a>
+            <a href="appointments.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Booking</a>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body></html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shanlink Medical Clinic | Professional Empathy in Care</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-header-red border-b border-white/10 shadow-lg">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 h-12">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-white"
+                    data-icon="medical_services">medical_services</span>
+                <span class="text-2xl font-bold text-white font-headline-md">Shanlink
+                    Medical</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 font-manrope text-sm font-medium">
+                <a class="font-manrope text-base font-medium text-white border-b-2 border-teal-400 pb-1"
+                    href="index.html">Home</a>
+                <a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    href="about.html">About</a>
+                <a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    href="services.html">Services</a>
+                <a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    href="doctors.html">Doctors</a>
+                <a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    href="appointments.html">Appointments</a>
+                <a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    href="pharmacy.html">Pharmacy</a>
+                <a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button aria-label="Search" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined text-white/80"
+                        data-icon="search">search</span>
+                </button>
+                <button aria-label="Toggle Dark Mode"
+                    class="p-2 rounded-full hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined text-white/80"
+                        data-icon="dark_mode">dark_mode</span>
+                </button>
+                <button class="md:hidden p-2 rounded-full hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined text-white" data-icon="menu">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-surface py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-8">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-sm">
+                        <span class="material-symbols-outlined text-sm" data-icon="verified"
+                            style="font-variation-settings: 'FILL' 1;">verified</span>
+                        <span>Trustworthy Healthcare Solutions</span>
+                    </div>
+                    <h1 class="font-headline-xl text-headline-xl text-on-background leading-tight">
+                        Experience <span class="text-primary">Professional Empathy</span> in Every Interaction.
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        At Shanlink Medical Clinic, we combine clinical precision with human warmth. Access world-class
+                        medical services tailored to your individual health journey.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="appointments.html"
+                            class="px-8 py-4 bg-[#facc15] text-black rounded-xl font-manrope font-semibold hover:bg-[#990000] hover:text-white transition-all shadow-lg flex items-center gap-2">
+                            Book Appointment
+                            <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                        </a>
+                        <a href="services.html"
+                            class="px-8 py-4 border-2 border-secondary text-secondary rounded-xl font-manrope font-semibold hover:bg-secondary-container/20 transition-all flex items-center gap-2">
+                            Our Services
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4 pt-12">
+                            <img class="w-full h-64 object-cover rounded-2xl shadow-xl"
+                                data-alt="close-up of a smiling professional female doctor in a clean modern clinic setting with soft natural light"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhxyLgZMxY0gyCVrrGkVffr3aGXC4yImDC_miFxcIsypJEjUaZbDFHRGzQbbw8aCwAwTQ3zKx2dV3l-_ZSEJD0G9qKcEGfpwSKz6mTUSpU3GOIffQN-W-rmGGTnYhhuU0_83oorayx-ftV4EooOWFyCyhFhqb-_SC3TzVHntHdVdlTQKbSFv-A5d4s6KCIECXSiDZbQD3JBHlicBj2ZvDMYrGiZSEJIYjjns9pCvMziWBN6y9FtXHnxjqUNYUmmDfvuJ2ccQwtk8M" />
+                            <img class="w-full h-48 object-cover rounded-2xl shadow-xl"
+                                data-alt="bright and airy modern hospital hallway with clean white walls and subtle medical equipment in the distance"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFuuq6c8ccI8Soje1fp-v0oT3Szxi_iMYiiKsSO0-VgearcYHK11aKgx9MbWesEoP5n6Jr_zkiWS1tslwHcGg5cvg_b3oG_USzAm6I4ZcxOiGldv3MhD-I79cCVY-GXmcoVLYxkVWuUubxUzkKA01V6EYNllkK_ECVS7GQW0yvR7a3ZIGhCgmXbEczM1lPGn0E7-fWpNFIrbStWPvimjMVmFodhRk_GElCfiZqCmLvuGcE_1WYgF6V0LBmwTulhHB_WzkGrTjCTc" />
+                        </div>
+                        <div class="space-y-4">
+                            <img class="w-full h-48 object-cover rounded-2xl shadow-xl"
+                                data-alt="modern medical consultation room with ergonomic chairs and clean professional desk setup with large windows"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwvBC9fET4ah5eTnEOfrlBrtud_oiEXJbJ_vWOpBA8OzR0bu8Dxu1JIwMEQ52F3GUZLrpKKFxdwbMuPKcme9AClSkGMTgIuvsNKbvfAELdTG11o7a2S8ya5u4ps4Py-w4Z0ejnNG5s5B5rlvPUrXAbu7YHw1rbMJLl-CdGdM9t98SEfHwwLnDW1UVXXTcYEiJW45ieKsr_cXTp9BKQeZUegPeODzVwIN3aTPTuAw1fc2SXdXWu8gQz0FdkND1nbQy2t411ToG1c20" />
+                            <img class="w-full h-64 object-cover rounded-2xl shadow-xl"
+                                data-alt="detailed shot of a stethoscope resting on a white desk next to a digital medical chart with soft bokeh background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4E4h_6l7vVI0w9XjjJ0mYJc9PNX0EbP2Nq7y-MkzH8VpJ-hLe6QSqm2xdlrV4MO3l1RN0s1YX3D3OlLVeoMuVbIAYTL0Jrg9NAbuBxWmqAhMgqGkfj6dAz2YzOnIbH1YRQ9eA-BQWwLhpXnGoT70uQVUUe1245UyYDslDC1ehJ0xJxPDdhlJdF2DGpNQu-VelFY_6iM3c6iv0ea6RreXZWAeOOVRMxVrmEhSHYwIl8G53rmiBPPWZx69J5Q1d_djdSsl7zEG2zK0" />
+                        </div>
+                    </div>
+                    <!-- Stats Floating Card -->
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-2xl border border-slate-100 dark:border-slate-700 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+                            <span class="material-symbols-outlined text-secondary" data-icon="groups">groups</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-on-surface">15k+</p>
+                            <p class="text-sm text-on-surface-variant">Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Bento Grid -->
+        <section class="py-20 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-12 text-center max-w-3xl mx-auto">
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Specialized Care for Every Need
+                    </h2>
+                    <p class="font-body-md text-on-surface-variant">Our clinic offers a comprehensive range of medical
+                        services provided by highly qualified specialists using the latest diagnostic technologies.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Cardiology (Large) -->
+                    <div
+                        class="md:col-span-2 bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow group">
+                        <div
+                            class="w-14 h-14 bg-red-50 dark:bg-red-900/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-red-500 text-3xl"
+                                data-icon="cardiology">cardiology</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-3">Cardiology</h3>
+                        <p class="font-body-md text-on-surface-variant mb-6">Comprehensive heart care, from routine
+                            screenings to advanced diagnostic procedures for complex cardiovascular conditions.</p>
+                    </div>
+                    <!-- Pediatrics -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow group">
+                        <div
+                            class="w-14 h-14 bg-teal-50 dark:bg-teal-900/20 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-secondary text-3xl"
+                                data-icon="child_care">child_care</span>
+                        </div>
+                        <h3 class="font-headline-md text-xl mb-3">Pediatrics</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant mb-4">Dedicated care for infants,
+                            children, and adolescents in a warm environment.</p>
+                    </div>
+                    <!-- Diagnostics -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow group">
+                        <div
+                            class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="biotech">biotech</span>
+                        </div>
+                        <h3 class="font-headline-md text-xl mb-3">Diagnostics</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant mb-4">Advanced laboratory and imaging
+                            services for accurate clinical assessments.</p>
+                    </div>
+                    <!-- Pharmacy -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow group">
+                        <div
+                            class="w-14 h-14 bg-orange-50 dark:bg-orange-900/20 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-orange-500 text-3xl"
+                                data-icon="medication">medication</span>
+                        </div>
+                        <h3 class="font-headline-md text-xl mb-3">Pharmacy</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant mb-4">In-house prescription services for
+                            quick and reliable medication access.</p>
+                    </div>
+                    <!-- Dental (Medium) -->
+                    <div
+                        class="md:col-span-2 bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-shadow group">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <div
+                                    class="w-14 h-14 bg-purple-50 dark:bg-purple-900/20 rounded-2xl flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-purple-500 text-3xl"
+                                        data-icon="dentistry">dentistry</span>
+                                </div>
+                                <h3 class="font-headline-md text-headline-md mb-3">Modern Dentistry</h3>
+                                <p class="font-body-md text-on-surface-variant">Expert oral health care utilizing
+                                    pain-free technology for a comfortable experience.</p>
+                            </div>
+                            <img class="w-32 h-32 object-cover rounded-2xl hidden sm:block"
+                                data-alt="professional dentist working with high-tech dental equipment in a bright white clinic room"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtUuGKveXPNiw6ml72RlJiiQRiBglMVQ7QrtLrqZdpxquIqF6T_o-qZNBpb6vniRxrd27TUIAT_-u-7fExxMsq_wA3jF_OYCLGl5WL-xfqfl1UNoQArFHDSeRWohilko0YjDjZZGAcNQ0pBwOfqunat__dXhV3Zi6BnUlY-9M52LZKgIYbyas1dHWl31zsfRfDGm6XHCF8fMUpXoNeJipbLMNCMTAlOdOZh71gKTDNe00Jsm_noCfYI8uWwqibcnDIbfu2gbbwPaA" />
+                        </div>
+                    </div>
+                    <!-- View All -->
+                    <a href="services.html"
+                        class="bg-[#facc15] text-black p-8 rounded-3xl flex flex-col justify-center items-center text-center cursor-pointer hover:bg-[#990000] hover:text-white transition-colors block">
+                        <span class="material-symbols-outlined text-4xl mb-4" data-icon="apps">apps</span>
+                        <h3 class="font-headline-md text-xl mb-2">View All Services</h3>
+                        <p class="text-sm opacity-80">Explore our full clinical directory</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-20 relative overflow-hidden">
+            <div class="absolute inset-0 bg-primary/5 -z-10"></div>
+            <div class="max-w-5xl mx-auto px-6">
+                <div
+                    class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-12 lg:p-20 shadow-2xl shadow-primary/10 flex flex-col items-center text-center border border-slate-100 dark:border-slate-800">
+                    <div class="mb-8 p-4 bg-secondary-container rounded-full inline-block">
+                        <span class="material-symbols-outlined text-secondary text-4xl"
+                            data-icon="health_and_safety">health_and_safety</span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl mb-6 max-w-2xl">Ready to prioritize your health today?
+                    </h2>
+                    <p class="font-body-lg text-on-surface-variant mb-10 max-w-xl">Join thousands of patients who trust
+                        Shanlink Medical for their family's health needs.</p>
+                    <div class="flex flex-col sm:flex-row gap-6 w-full max-w-md">
+                        <a href="appointments.html"
+                            class="flex-1 px-8 py-5 bg-[#facc15] text-black rounded-2xl font-bold hover:bg-[#990000] hover:text-white hover:scale-105 transition-all text-center inline-block">Schedule
+                            Visit</a>
+                        <a href="https://wa.me/254113535069" target="_blank" rel="noopener noreferrer"
+                            class="flex-1 px-8 py-5 border-2 border-outline text-on-surface rounded-2xl font-bold hover:bg-surface-container transition-colors text-center inline-block">Inquire
+                            Online</a>
+                    </div>
+                    <div class="mt-8 flex items-center gap-6">
+                        <div class="flex -space-x-3">
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                                data-alt="portrait of a professional doctor"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaUs-SKR7JYASlvDWrkoX-br1bip8ucF5DtcgNEpHYzX-91bHBbVjEsln6wfHS_Y_kzJuy7B-r-uXqpo51txvtMFs3v-dgR_ZjxIUwHn4gEtj1yuON9dp_qqVZCmP5K93IsQXWOkxM70c-K7wT1cAoSb-jsYSPAnz-TV6LDPXMbR5vPgoJrcxrYcIG6wzr3H_UEtyH9HYKyS-BC5jSTmW4Le0vcHZqsAWBv0ikEnRODc5sfuOuexlk9jqfafy2GZ46i3dpPPcVvxk" />
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                                data-alt="portrait of a female medical professional"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv_uqtoegusKDBGEG3uxCOZZyQmx3S1pMPbhO055iTXC1Ixr3onNkr6x7ish7YxXRVPjpQPyrw6alvwuTveEfIO0UsfcobCIdfi4m7vV_7XEhGT3xGDlsmAX3eY_uEMsYVYQN0KXLz0BGQWko4QH5e87dM0n856vEz4ljzoiQ5mXNGPy7HArqT6d_J5oYu7ybkwxy6NXc_S-r8aIl_WdnQ0L8D6wVMz9iC8d8nBM7mGjOYAqHFQBzcLmkfWos7TwVHI-g46pbmK5I" />
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                                data-alt="portrait of a male physician"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAGFqYnlKhEBeiG-pMdXcN8Y_sIWi3FrtUWSjD8uZqv6yxBphLGnAHsXDZ7DN5xlPy1SU19l-NbrPpdfmiEomcfmcAowHNSMknasuNCC1e90tLyDgRCvLnUofOcnA0O0gYps-iwSb0cZ4qeYVONdw4Ns3yBZqOaVRpsj1SrlSfIKcBW7X3oYHV12AdQq5-mR_WFoe74Kaog0Nvap6VRWoQboVejCGJUA8WEJsh-rlaNogHyECcunRp5kJYIISgbO-2ku3fTboF1Bg" />
+                        </div>
+                        <p class="text-sm font-label-sm text-on-surface-variant"><span
+                                class="font-bold text-on-surface">50+</span> Specialists available now</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-footer-red py-16 md:py-20 px-6 md:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16 text-center md:text-left">
+                <div class="space-y-6 md:space-y-8">
+                    <h3 class="text-3xl md:text-4xl font-bold font-headline-md">Shanlink Medical</h3>
+                    <p class="text-white/90 text-base md:text-lg leading-relaxed max-w-sm mx-auto md:mx-0">
+                        Professional empathy in every interaction. Providing world-class healthcare since 2009.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Quick Links</h4>
+                    <ul class="space-y-4 md:space-y-5 text-base md:text-lg text-white/80">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="appointments.html" class="hover:text-white transition-colors">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Contact Us</h4>
+                    <p class="text-base md:text-lg text-white/80 mb-6 md:mb-8">Shanlink medical clinic, Nairobi</p>
+                    <a href="https://wa.me/254113535069" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white px-8 md:px-10 py-3 md:py-4 rounded-full text-lg md:text-xl font-bold hover:scale-105 transition-transform shadow-2xl mb-8 inline-block text-center">
+                        WhatsApp Us
+                    </a>
+                    <div class="flex items-center justify-center md:justify-start gap-6">
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="X">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.333.014 7.053.072 2.695.272.272 2.69.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.618 6.77 6.98 6.97 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.351-.2 6.77-2.618 6.97-6.98.058-1.28.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.351-2.618-6.77-6.97-6.97C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 md:pt-10 border-t border-white/20 text-center">
+                <p class="font-manrope text-base md:text-lg font-medium text-white">
+                    © <span class="current-year">2026</span> Shanlink Medical Clinic. Professional Empathy in Care. | Designed by Momanyi
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="fixed inset-0 bg-header-red/95 z-[60] hidden items-center justify-center p-6 backdrop-blur-md">
+        <button id="close-search" class="absolute top-8 right-8 text-white/70 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <div class="w-full max-w-3xl text-center">
+            <div class="flex items-center justify-center gap-3 md:gap-4 mb-8 md:mb-10">
+                <span class="material-symbols-outlined text-teal-400 text-5xl md:text-6xl">medical_services</span>
+                <h2 class="text-3xl md:text-5xl font-headline-lg text-white">Shanlink Search</h2>
+            </div>
+            <div class="relative group">
+                <span class="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 material-symbols-outlined text-teal-400 text-3xl md:text-4xl group-focus-within:scale-110 transition-transform">medical_services</span>
+                <input type="text" id="search-input" placeholder="Search for doctors, services..." 
+                    class="w-full bg-white/10 border-b-2 border-white/30 text-white text-xl md:text-3xl py-6 md:py-8 pl-16 md:pl-20 pr-12 md:pr-16 focus:outline-none focus:border-teal-400 placeholder:text-white/20 transition-colors">
+                <button class="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-4xl md:text-5xl">search</span>
+                </button>
+            </div>
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+                <span class="text-white/60 text-sm">Popular:</span>
+                <a href="doctors.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Find a Doctor</a>
+                <a href="services.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Emergency Services</a>
+                <a href="appointments.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Booking</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAB -->
+    <button
+        class="fixed bottom-8 right-8 w-16 h-16 bg-secondary text-on-secondary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-40 group">
+        <span class="material-symbols-outlined text-3xl" data-icon="add_box">add_box</span>
+        <span
+            class="absolute right-full mr-4 bg-white text-on-surface py-2 px-4 rounded-xl shadow-xl text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-100">Book
+            Appointment</span>
+    </button>
+    <script src="main.js"></script>
+</body>
+
+</html>

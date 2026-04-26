@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pharmacy &amp; Health Info | Shanlink Medical</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="styles.css" />
+  </head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-header-red border-b border-white/10 shadow-lg">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-6 h-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="medical_services">medical_services</span>
+<span class="text-2xl font-bold text-white font-headline-md">Shanlink Medical</span>
+</div>
+<nav class="hidden md:flex items-center gap-6 font-manrope text-sm font-medium">
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="index.html">Home</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="about.html">About</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="services.html">Services</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="doctors.html">Doctors</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="appointments.html">Appointments</a>
+<a class="font-manrope text-base font-medium text-white border-b-2 border-teal-400 pb-1" href="pharmacy.html">Pharmacy</a>
+<a class="font-manrope text-base font-medium text-white/70 hover:text-white transition-colors duration-200" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="Search" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-white/80" data-icon="search">search</span>
+</button>
+<button aria-label="Toggle Dark Mode" class="p-2 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-white/80" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[400px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Modern clean clinical pharmacy with organized shelves of medicine in soft bright white and blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6o4ZLT-_54_XGfkBovntyYoIsV9XIKk0zsk_HL6L4VvAE2vXoKpEZ9x4Rb-J_2LEUDIuYHe671hwWYDy9D2EU1tftSGz9xfTojkSJ5mlk1AD_QYHROd0N9B_lEqKFZ-q5lvJ6yyyCsHCu1CtldEBl2Rn4nw9W55gN4RJwFlhKYs_biQN88hZ1u1ZhVplhUGJfgRwLracmjor58UWLw7HpmgtZt_BmW24EUA8jmaEKYEKI7xS5QPLbWijxPFdgGUQiqDE32R1dd38"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-white mb-4">Your Health, Our Priority. <br/>Professional Pharmacy Care.</h1>
+<p class="font-body-lg text-on-primary-container mb-8">Access authentic medications and expert pharmaceutical advice right within our clinic premises. Open 24/7 for your convenience.</p>
+<div class="flex gap-4">
+
+<a href="https://wa.me/1234567890" target="_blank" class="inline-block text-center border-2 border-secondary-container px-8 py-3 rounded-lg text-secondary-container font-label-sm font-bold hover:bg-secondary-container/10 transition-colors">Talk to Pharmacist</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Pharmacy Services Bento Grid -->
+<section class="py-xl max-w-7xl mx-auto px-6">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-primary">Comprehensive Pharmacy Services</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl">Ensuring you get the right medication with professional guidance and absolute safety standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-gutter h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest dark:bg-slate-800 p-lg rounded-xl border border-slate-100 dark:border-slate-700 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="prescriptions">prescriptions</span>
+<h3 class="font-headline-md mb-xs">Prescription Fulfillment</h3>
+<p class="font-body-md text-on-surface-variant">Instant processing of clinic prescriptions with digital tracking and automated refill reminders via our mobile app.</p>
+</div>
+<img class="rounded-lg h-48 object-cover mt-8" data-alt="Professional pharmacist in white coat carefully organizing colorful medicine capsules in a laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9E1cy9Znh5ZW8RBMlYY-kxwYxItg-lS9WA8GUD1c1DLVu7X3cWJP04bsjtwNKjBpotVuu1Uhq5-PL6eBcFFyivawj_fO99FRfseI1_0tsyZfDsvL9B8ddKsD5DKAx74scSalaa_akS90OrsPpEyA9LQPRNQlJ1VTcAYXsebS_6Tb_II6Jrk1In-vXBPdq8SZdZfIOhwxNK3W-NTCS1B5i9o2wjUbG-lfpXleBRhEvzz_s2yFDw9TxthTV1UeWvuC4Q1HEXXMR7p0"/>
+</div>
+<div class="md:col-span-2 bg-secondary-container/20 p-md rounded-xl border border-secondary-container/30 flex items-center gap-6">
+<div class="flex-1">
+<h3 class="font-headline-md mb-2">Home Delivery</h3>
+<p class="font-body-md text-on-surface-variant">Free delivery within 5km for senior citizens and chronic care patients.</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<div class="bg-surface-container p-md rounded-xl border border-outline-variant hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="vaccines">vaccines</span>
+<h4 class="font-label-sm font-bold uppercase tracking-wider mb-2">Vaccinations</h4>
+<p class="text-sm text-on-surface-variant">On-site flu shots, travel vaccines, and COVID-19 boosters available daily.</p>
+</div>
+<div class="bg-surface-container p-md rounded-xl border border-outline-variant hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="support_agent">support_agent</span>
+<h4 class="font-label-sm font-bold uppercase tracking-wider mb-2">Consultation</h4>
+<p class="text-sm text-on-surface-variant">Private sessions for medication reviews and dosage management advice.</p>
+</div>
+</div>
+</section>
+<!-- Health Awareness Section -->
+<section class="bg-surface-container-lowest py-xl">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-8 h-[2px] bg-secondary"></span>
+<span class="text-secondary font-bold font-label-sm uppercase tracking-widest">Health Awareness</span>
+</div>
+<h2 class="font-headline-lg text-primary">Medical Insights &amp; Tips</h2>
+</div>
+<div class="flex gap-2" id="insight-tabs">
+<button onclick="switchTab('prevention')" id="tab-prevention" class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-medium">Disease Prevention</button>
+</div>
+</div>
+<div id="grid-prevention" class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Article 1 -->
+<div class="group bg-surface-container-lowest dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A heart shape formed by hands against a soft warm sunset background, symbolizing cardiovascular health and care" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUKxlNzThO6ueElVApsKYy7QfhfmH8lVobGkF5_vrv61Xi6ucP_hz2gf3fYWCU56Nu_md-LISyIYN3-VPJRwkhD-PL8JMkrvO-MD3xjfCcKyCO_scc5zYV1JdWfp9IGun5vElikGLD77WHaj3xWGD2OVQQrfl1kWqkGvY3c0Ss8dCaHl_WiVXewLOF6ocTcZz8ihVxfgXYcnXVx8nc-6F0s0VTDB1nzna5ropPvnCMnyjQRzmWkUa4L-UFpZTRpfaK_2S61uCiO5Q"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded text-xs font-bold">CARDIOLOGY</div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md mb-2 group-hover:text-secondary transition-colors">Understanding Hypertension</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-3">Silent killers often have no symptoms. Learn how to monitor your blood pressure and why sodium intake matters for your heart health.</p>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="group bg-surface-container-lowest dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vibrant fresh salad bowl with colorful vegetables and seeds, lit by soft natural morning window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEj2jZ0_spGW1HargEJPMfKAAU9kwpSUDSmPJ_7tWZlNZmWQIPcFoCXkzYaPalkrr4uzTftJgM5-kMl-qFTXS3ki9yzEytq6ZaJi-ibDNdtuzSovoIMRO1gHyGuuOZAAl08dhpZnywTIGrlnuSyLINKseUPV58_clbm0VgUBjzjnV0EMnSzShH0y201VGkLDl6NihqzTbw2ZKRvQkWPeZQAIOQLqjpO7tLTJ8rHcYSecpNhD7MzSs3M42_PMkXvFYat0QotSSqbzc"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded text-xs font-bold">DIABETES</div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md mb-2 group-hover:text-secondary transition-colors">Diabetes Management Tips</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-3">Maintaining stable glucose levels starts in the kitchen. Explore our dietitian-approved meal plans and low-GI snack ideas.</p>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="group bg-surface-container-lowest dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Scientific illustration of immune system cells fighting viruses in a deep blue and violet microscopic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1-GMdnOjyVyIzMU9NcDYlm2FMOrecMcQgVeAoSzto1KhmFGAEwPjIvDJIez1Vr3mbUzui35vFepVKagb9oPNzKhVhRR2QEjj-kIzZpPJnjy1NgUpXi10Y8bGBVnL9KPfE5czDy4GV3UovMle2336DbpvVy4ryw0EvmUgNr-gcrzsT7jpShUjUjqvVdO1MTtveh2b9VQ08Ku2MzAIbEU7VbUb13s8UQlbUYFePA29IRJtmgudzgqP2C0EzGOjGgAjNJZHtjIrc65c"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded text-xs font-bold">IMMUNOLOGY</div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md mb-2 group-hover:text-secondary transition-colors">Flu Season Survival Guide</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-3">The best defense is a good offense. Find out when to get vaccinated and the most effective hygiene practices for your family.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Health Tips Callout -->
+<section class="max-w-7xl mx-auto px-6 py-xl">
+<div class="bg-header-red rounded-3xl p-lg flex flex-col md:flex-row items-center gap-lg shadow-2xl">
+<div class="w-full md:w-1/3">
+<img class="rounded-2xl shadow-lg border-4 border-white/20" data-alt="Person practicing peaceful meditation in a bright, airy studio with sunlight streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc3yBOnxQYXl7wMr7Rd4NwHIPo2tQfKAaqbqaM2mzLK0ye8dDyEcEd3Y5e-LMIvm48EfXZqgxtp2Zs_hchtt7eEyPs3mxWNiJ_4i9SpBQ3KCmw06GkEO70qcib8AQFwZMT66fja285aJQz9vfKn8V49F6-nf53M1KPP7nHuQH4QkXCsbGKixYqvRDxVxEzM4HsWXwxC-wGzA4Q5xT_axE-U91ioHHBlTLrUYPHwXkbJ84tjAge0arPQoD1tl-VWMzvrWDWRPeWVdU"/>
+</div>
+<div class="flex-1">
+<h2 class="font-headline-lg text-white mb-4">Quick Health Tip of the Month</h2>
+<p class="font-body-lg text-white/90 mb-6 italic">"Mental health is just as vital as physical health. Dedicate 10 minutes every morning to deep breathing exercises to lower cortisol levels."</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 bg-surface-container-lowest/10 px-4 py-2 rounded-full border border-white/20 text-white">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+<span class="text-sm">Drink 2L Water</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/10 px-4 py-2 rounded-full border border-white/20 text-white">
+<span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
+<span class="text-sm">7-8h Sleep</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/10 px-4 py-2 rounded-full border border-white/20 text-white">
+<span class="material-symbols-outlined" data-icon="directions_walk">directions_walk</span>
+<span class="text-sm">Daily Walk</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pharmacy FAQ -->
+<section class="max-w-4xl mx-auto px-6 pb-xl">
+<h2 class="font-headline-md text-center mb-lg">Pharmacy Frequently Asked Questions</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-lowest dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
+<summary class="flex items-center justify-between p-md cursor-pointer list-none font-bold text-primary group-open:bg-surface-container transition-colors">
+                        How do I refill my prescription?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-md text-on-surface-variant font-body-md border-t border-slate-100 dark:border-slate-700">
+                        You can refill your prescription through our mobile app, by calling the pharmacy directly at (555) 0123-4567, or by visiting our walk-in counter with your prescription number.
+                    </div>
+</details>
+<details class="group bg-surface-container-lowest dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
+<summary class="flex items-center justify-between p-md cursor-pointer list-none font-bold text-primary group-open:bg-surface-container transition-colors">
+                        Do you accept international insurance?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-md text-on-surface-variant font-body-md border-t border-slate-100 dark:border-slate-700">
+                        Yes, we work with most major international insurance providers. Please bring your insurance card and a valid ID for processing at the pharmacy counter.
+                    </div>
+</details>
+<details class="group bg-surface-container-lowest dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
+<summary class="flex items-center justify-between p-md cursor-pointer list-none font-bold text-primary group-open:bg-surface-container transition-colors">
+                        Are generic medications as effective?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-md text-on-surface-variant font-body-md border-t border-slate-100 dark:border-slate-700">
+                        Absolutely. Generic medications are required to have the same active ingredients, strength, and quality as brand-name drugs. Our pharmacists can help you choose the best value for your budget.
+                    </div>
+</details>
+</div>
+</section>
+</main>
+<!-- Footer -->
+    <footer class="bg-footer-red py-16 md:py-20 px-6 md:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16 text-center md:text-left">
+                <div class="space-y-6 md:space-y-8">
+                    <h3 class="text-3xl md:text-4xl font-bold font-headline-md">Shanlink Medical</h3>
+                    <p class="text-white/90 text-base md:text-lg leading-relaxed max-w-sm mx-auto md:mx-0">
+                        Professional empathy in every interaction. Providing world-class healthcare since 2009.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Quick Links</h4>
+                    <ul class="space-y-4 md:space-y-5 text-base md:text-lg text-white/80">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="appointments.html" class="hover:text-white transition-colors">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Contact Us</h4>
+                    <p class="text-base md:text-lg text-white/80 mb-6 md:mb-8">Shanlink medical clinic, Nairobi</p>
+                    <a href="https://wa.me/254113535069" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white px-8 md:px-10 py-3 md:py-4 rounded-full text-lg md:text-xl font-bold hover:scale-105 transition-transform shadow-2xl mb-8 inline-block text-center">
+                        WhatsApp Us
+                    </a>
+                    <div class="flex items-center justify-center md:justify-start gap-6">
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="X">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.333.014 7.053.072 2.695.272.272 2.69.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.618 6.77 6.98 6.97 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.351-.2 6.77-2.618 6.97-6.98.058-1.28.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.351-2.618-6.77-6.97-6.97C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 md:pt-10 border-t border-white/20 text-center">
+                <p class="font-manrope text-base md:text-lg font-medium text-white">
+                    © <span class="current-year">2026</span> Shanlink Medical Clinic. Professional Empathy in Care. | Designed by Momanyi
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<!-- Search Overlay -->
+<div id="search-overlay" class="fixed inset-0 bg-header-red/95 z-[60] hidden items-center justify-center p-6 backdrop-blur-md">
+    <button id="close-search" class="absolute top-8 right-8 text-white/70 hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="w-full max-w-3xl text-center">
+        <div class="flex items-center justify-center gap-3 md:gap-4 mb-8 md:mb-10">
+            <span class="material-symbols-outlined text-teal-400 text-5xl md:text-6xl">medical_services</span>
+            <h2 class="text-3xl md:text-5xl font-headline-lg text-white">Shanlink Search</h2>
+        </div>
+        <div class="relative group">
+            <span class="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 material-symbols-outlined text-teal-400 text-3xl md:text-4xl group-focus-within:scale-110 transition-transform">medical_services</span>
+            <input type="text" id="search-input" placeholder="Search for doctors, services..." 
+                class="w-full bg-white/10 border-b-2 border-white/30 text-white text-xl md:text-3xl py-6 md:py-8 pl-16 md:pl-20 pr-12 md:pr-16 focus:outline-none focus:border-teal-400 placeholder:text-white/20 transition-colors">
+            <button class="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-4xl md:text-5xl">search</span>
+            </button>
+        </div>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <span class="text-white/60 text-sm">Popular:</span>
+            <a href="doctors.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Find a Doctor</a>
+            <a href="services.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Emergency Services</a>
+            <a href="appointments.html" class="text-white/80 hover:text-teal-400 text-sm underline decoration-white/20 underline-offset-4">Booking</a>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+function switchTab(tabName) {
+    const tabs = ['prevention'];
+    
+    tabs.forEach(tab => {
+        const grid = document.getElementById('grid-' + tab);
+        if (!grid) return;
+        
+        if (tab === tabName) {
+            grid.classList.remove('hidden');
+            grid.classList.add('grid');
+        } else {
+            grid.classList.add('hidden');
+            grid.classList.remove('grid');
+        }
+        
+        const tabBtn = document.getElementById('tab-' + tab);
+        if (tab === tabName) {
+            tabBtn.className = "px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-medium";
+        } else {
+            tabBtn.className = "px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-label-sm font-medium";
+        }
+    });
+}
+</script>
+</body>
+</html>
