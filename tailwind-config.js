@@ -51,7 +51,8 @@ tailwind.config = {
               "primary-fixed": "#d6e3ff",
               "secondary-container": "#7af1fc",
               "header-red": "#990000",
-              "footer-red": "#990000"
+              "footer-red": "#990000",
+              "yellow-primary": "#facc15"
       },
       "borderRadius": {
               "DEFAULT": "0.25rem",
