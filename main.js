@@ -172,4 +172,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 5. Nav Scroll Effect
+    const mainHeader = document.getElementById('main-header');
+    if (mainHeader) {
+        const updateNav = () => {
+            if (window.scrollY > 20) {
+                mainHeader.classList.add('nav-scrolled');
+            } else {
+                mainHeader.classList.remove('nav-scrolled');
+            }
+        };
+        window.addEventListener('scroll', updateNav, { passive: true });
+        updateNav(); // Run on load
+    }
 });
