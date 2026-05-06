@@ -123,21 +123,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeMobileMenu = document.getElementById('close-mobile-menu');
     const mobileLinks = mobileMenu?.querySelectorAll('nav a');
 
+    // Create backdrop
+    const menuBackdrop = document.createElement('div');
+    menuBackdrop.id = 'menu-backdrop';
+    menuBackdrop.style.cssText = 'position:fixed;inset:0;z-index:69;background:rgba(0,0,0,0.35);backdrop-filter:blur(2px);display:none;opacity:0;transition:opacity 0.25s ease';
+    document.body.appendChild(menuBackdrop);
+
+    // Slide-in styles
+    if (mobileMenu) {
+        mobileMenu.style.transform = 'translateX(100%)';
+        mobileMenu.style.transition = 'transform 0.3s cubic-bezier(0.4,0,0.2,1)';
+    }
+
     if (mobileMenuTrigger && mobileMenu) {
-        mobileMenuTrigger.addEventListener('click', () => {
-            console.log('Mobile menu trigger clicked');
+        const openMenu = () => {
             mobileMenu.classList.remove('hidden');
             mobileMenu.classList.add('flex');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-
-        const closeMenu = () => {
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('flex');
-            document.body.style.overflow = ''; // Restore scrolling
+            menuBackdrop.style.display = 'block';
+            requestAnimationFrame(() => {
+                mobileMenu.style.transform = 'translateX(0)';
+                menuBackdrop.style.opacity = '1';
+            });
         };
 
+        const closeMenu = () => {
+            mobileMenu.style.transform = 'translateX(100%)';
+            menuBackdrop.style.opacity = '0';
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                menuBackdrop.style.display = 'none';
+            }, 300);
+        };
+
+        mobileMenuTrigger.addEventListener('click', openMenu);
         closeMobileMenu?.addEventListener('click', closeMenu);
+        menuBackdrop.addEventListener('click', closeMenu);
 
         // Close on link click
         mobileLinks?.forEach(link => {
