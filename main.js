@@ -1,4 +1,4 @@
-// Global JavaScript for Shanlink Medical Clinic
+﻿// Global JavaScript for Shanilink Medical Clinic
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Dynamic Year
